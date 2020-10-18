@@ -5,6 +5,6 @@ def add(site):
   with open('res.txt', 'a') as writer:
 	      writer.write("http://"+site+"\n")
   
-target = input(Fore.WHITE+"Input your list :")
+target = input(Fore.WHITE+"Input your list : ")
 for site in open(target, 'r').read().splitlines():
   add(site)
